@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: BudgetBuddy
+  datasource:
+    url: jdbc:mysql://localhost:3306/budget_tracker
+    username: root
+    password: jaishreeram
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
