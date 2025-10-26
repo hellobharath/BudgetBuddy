@@ -1,0 +1,16 @@
+spring:
+  application:
+    # application name
+    name: UserService
+
+  # Hibernate DB parameters
+  datasource:
+    url: jdbc:mysql://localhost:3306/budget_tracker
+    username: root
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update

@@ -1,0 +1,12 @@
+Some observations/learnings while building this application/service:
+
+1. Including spring boot starter security endpoint automatically provides a /login endpoint, and also a default UI for
+    authentication.
+
+2. Spring boot JPA dependency compulsorily needs a DB URL defined, else it will throw error during build stage
+3. Add dda-auto update to true for DB updates
+4. Need to add hibernate dialect as MySQLDialect for establishing mysql connection with hibernate
+5. "ddl-auto: update" needs to be added for entity to be created/updated in mysql
+6. "Build project automatically" option is checked in "Build, Execution, Deployment > Compiler",
+    "Allow auto-make to start even if developed application is currently running." in "Compiler -> Advanced Settings" so
+    that dev tools are used after adding plugin
